@@ -1,0 +1,154 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  color: #404040;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: normal;
+  font-style: normal;
+  transform: rotate(0.04deg);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  text-align: center;
+}
+
+.empty-row {
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inside {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 980px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo img {
+  width: 150px;
+  margin: 20px 0;
+}
+
+/* nav 설정 */
+.section-bg {
+  border-width: 0 0 1px;
+  border-color: #f2f2f2;
+  border-style: solid;
+  position: relative;
+}
+
+.section {
+  border: 1px solid lightgray;
+}
+
+.navigation-bar {
+  position: relative;
+  display: table;
+  /* table-layout: fixed; */
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inline-section {
+  height: 54px;
+  vertical-align: middle;
+  position: relative;
+  display: table-cell;
+  padding: 12px, 0;
+}
+
+.inline-section:first-child {
+  border-left: 0;
+  width: 389px;
+}
+
+.inline-section:last-child {
+  text-align: right;
+}
+
+.title {
+  text-align: center;
+}
+
+.sub-bar a {
+  font-size: small;
+  padding: 0 10px;
+}
+
+/* menu */
+.menubar {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  vertical-align: middle;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 70px;
+  min-height: auto;
+}
+
+.main-menu-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-menu-bar > li {
+  display: table-cell;
+  float: left;
+  padding: 0 10px;
+  font-size: 15pt;
+  font-weight: 500;
+}
+
+/*  메인 리스트 */
+.big-font {
+  font-size: 25pt;
+  font-weight: 600;
+}
+
+/* footer */
+#bottom-information {
+  margin: 0px;
+  background-color: #eeeeee;
+  padding: 80px 0;
+}
+
+.footer {
+  padding: 0 15px;
+  width: 75%;
+}
+
+.foot-nav {
+  list-style: none;
+  padding-left: 0;
+  color: black;
+  font-size: 12pt;
+}
+
+.footer-ul {
+  display: table;
+}
+
+.foot-nav > li {
+  display: table-cell;
+  padding-right: 20px;
+}
+
+.custom-text {
+  padding: 0;
+}
+
+.font-gray p {
+  color: gray;
+  font-size: small;
+  line-height: 1.2em;
+}

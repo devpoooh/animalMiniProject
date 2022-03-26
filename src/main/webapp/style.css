@@ -1,0 +1,419 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  color: #404040;
+  line-height: 1.5;
+  font-weight: normal;
+  font-size: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* body {
+  margin: 0;
+} */
+
+.inside {
+  /* display: block; */
+  /* position: relative; */
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.border-box {
+  border: 1px solid lightgray;
+}
+
+/* 태그 속성 */
+a {
+  text-decoration: none;
+}
+
+main {
+  margin-top: 60px;
+}
+
+h3 {
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+table input:focus,
+.search input:focus {
+  outline: 2px solid #f8c955;
+  border: 1px solid #f8c955;
+}
+
+/* font 속성 */
+.font-small {
+  font-size: small;
+}
+
+.font-bold {
+  /* menubar 진하게 */
+  font-weight: 500;
+}
+
+.size-m {
+  font-size: 15pt;
+}
+
+.size-l {
+  font-size: 25pt;
+}
+
+.top {
+  position: relative;
+  top: 11px;
+  margin: 0 7px;
+  font-size: 15pt;
+  font-weight: 600;
+}
+
+/* img */
+.main-logo {
+  text-align: center;
+  margin: 7px 0;
+}
+
+.main-logo img {
+  width: 300px;
+}
+
+/* img {
+  width: 200px;
+} */
+
+.main-wrapper img {
+  width: 230px;
+  height: 280px;
+}
+/* navbar 속성 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  height: 35px;
+}
+
+.navbar-title {
+  padding-left: 200px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar-menu li {
+  padding: 5px 12px;
+  font-size: small;
+}
+
+/* menubar 속성 */
+.menubar {
+  margin: 5px 0;
+}
+
+.menubar-menu {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menubar-menu > li {
+  list-style: none;
+}
+
+.menubar-menu > li:last-child {
+  margin-right: 0;
+}
+/* index main 속성 */
+
+/* grid해보기 */
+.main-boxes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* grid */
+  display: grid;
+  grid-auto-rows: minmax(125px, auto);
+}
+
+.main-boxes > * {
+  padding: 10px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  .main-boxes {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 2px;
+  }
+}
+
+/* paging 해보기 */
+.paging {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.paging li {
+  padding: 0 7px;
+}
+
+/* main-search */
+.search {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 5px;
+  width: 200px;
+}
+
+/* footer 속성 */
+.footer {
+  background-color: #eeeeee;
+  padding: 70px 0;
+}
+
+.foot-police {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.foot-police li {
+  list-style: none;
+  margin-right: 7px;
+}
+
+.foot-title {
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.foot-info li {
+  list-style: none;
+  line-height: 1.2em;
+  color: rgb(114, 114, 114);
+}
+
+/* login main 속성 */
+.login-form {
+  padding: 20px 0;
+}
+
+.login-input {
+  margin-bottom: 10px;
+}
+
+.login-form-input input {
+  padding: 12px 16px;
+  width: 96.5%;
+  border: 1px solid #e0e0e0;
+}
+
+.login-checkbox input {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e0e0e0;
+}
+
+.login-checkbox span {
+  padding-left: 7px;
+  font-size: 13pt;
+  position: relative;
+  bottom: 2px;
+}
+
+.login-btn {
+  margin: 7px 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #404040;
+  /* font */
+  font-size: 14pt;
+}
+
+.login-btn:hover {
+  background-color: #f8c955;
+  border: 1px solid #f8c955;
+  color: white;
+  cursor: pointer;
+}
+
+.login-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.login-menu li {
+  list-style: none;
+}
+
+/* join 속성 */
+.join-title {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  /* margin-top: 50px; */
+  margin-bottom: 10px;
+}
+
+main table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+table .col1 {
+  width: 150px;
+  border-right: 1px solid #dfdfdf;
+  background-color: #fbfafa;
+}
+
+tbody {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: middle;
+}
+
+tbody tr {
+  display: table-row;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tbody th {
+  padding: 10px 0 11px 18px;
+  text-align: left;
+  border: inherit;
+}
+
+tbody td {
+  padding: 8px 10px 7px;
+  border: inherit;
+}
+
+tbody td input {
+  border: 1px solid lightgray;
+  padding: 2px 4px;
+  width: 150px;
+}
+
+.plusmsg {
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.join-postcode {
+  width: 70px;
+}
+
+.postbtn {
+  border: 1px solid lightgray;
+  padding: 5px 14px;
+  position: relative;
+  bottom: 1.5px;
+  margin-left: 3px;
+}
+
+.join-btn {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.joinbtn {
+  width: 180px;
+  background-color: #404040;
+  padding: 10px 16px;
+  font-weight: 4s00;
+  font-size: 12px;
+  color: #e0e0e0;
+}
+
+.star {
+  color: #ffb700;
+  font-weight: 700;
+  padding: 0 2px;
+}
+
+/* list 속성 */
+/* 줄글형 */
+.list h3 {
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.list h4 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  font-size: 15pt;
+  font-weight: 500;
+}
+
+.list hr {
+  margin: 0px auto;
+  width: 110px;
+  height: 5px;
+  background-color: #404040;
+  border-radius: 2em;
+}
+
+.list-table {
+  overflow: scroll;
+}
+
+.list-table thead {
+  display: none;
+}
+
+.list-table colgroup {
+  display: table-column-group;
+}
+
+.list-table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.list-table tr {
+  height: 10px;
+  display: table-row;
+  vertical-align: inherit;
+  /* border-color: inherit; */
+}
+
+.list-table td {
+  padding: 20px 10px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 18px;
+  color: #a0a0a0;
+  text-align: center;
+}
+
+.list-table .list-table-title {
+  text-align: left;
+  color: #404040;
+}

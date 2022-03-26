@@ -1,0 +1,38 @@
+/* 반응형 css */
+
+/* menubar 속성 */
+.info-wrap {
+  display: none;
+}
+
+/* menubar sub list -> mouseenter시*/
+.on {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+dl {
+  border: 1px solid #e0e0e0;
+  position: relative;
+  bottom: 10px;
+  margin-block-start: 1em;
+}
+
+dd {
+  /* 들여쓰기  */
+  margin-inline-start: 40px;
+  position: relative;
+  right: 20px;
+  padding: 5px 10px;
+  margin-right: 50px;
+}
+
+/* join 속성 */
+/* input===null인 경우 */
+.error {
+  color: red;
+  font-size: 12px;
+  padding-left: 5px;
+}

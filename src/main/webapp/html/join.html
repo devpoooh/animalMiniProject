@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../react.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/join.js"></script>
+    <script type="text/javascript">
+        // 전화번호 숫자입력 제한
+        function maxLengthCheck(object){
+          if (object.value.length > object.maxLength){
+            object.value = object.value.slice(0, object.maxLength);
+          }    
+        }
+      </script>
+    <title>회원가입 페이지</title>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+            <div class="border-box">
+                <div class="inside">
+                    <nav class="navbar">
+                        <div class="navbar-link">
+                            <a href="https://www.instagram.com/" class="font-small">Instargram</a>
+                        </div>
+                        <div class="navbar-title">
+                            <a href="./index.html" style="font-size: 12pt;">동물 입양 사이트</a>
+                        </div>
+                        <ul class="navbar-menu" >
+                            <li><a href="../html/login.html" class="font-small">로그인</a></li>
+                            <li><a href="../html/join.html" class="font-small">회원가입</a></li>
+                            <li><a href="../html/mypage.html" class="font-small">마이페이지</a></li>
+                            <li><a href="" class="font-small">검색</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- 로고 -->
+            <div class="main-logo">
+                <a href="index.html"><img src="../image/logo.JPG" alt=""></a>
+            </div>
+            <!-- menubar -->
+            <div class="border-box">
+                <div class="inside">
+                    <div class="menubar">
+                        <ul class="menubar-menu">
+                            <li><a href="../html/about.html" class="font-bold size-m">공지사항</a></li>
+                            <li><a href="../html/info.html" class="hover font-bold size-m">
+                                입양안내</a>
+                                <div class="info-wrap">
+                                    <dl>
+                                        <dd>
+                                           <a href="">입소안내</a> 
+                                        </dd>
+                                        <dd>
+                                            <a href="">입양절차</a> 
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li><a href="../html/ask.html" class="hover font-bold size-m">
+                                문의&신청</a>
+                                <div class="info-wrap">
+                                    <dl>
+                                        <dd>
+                                           <a href="">입소신청</a> 
+                                        </dd>
+                                        <dd> 
+                                           <a href="">입양신청</a> 
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li><a href="../html/review.html" class="font-bold size-m">입양후기</a></li>
+                            <li><a href="../html/donation.html" class="font-bold size-m">정기후원</a></li>
+                        </ul>
+                    </div>       
+                </div>
+            </div>
+        </header>
+    <main>
+        <div class="inside">
+            <div class="join-basic">
+                <ul class="join-title">
+                    <li>기본정보</li>
+                    <li><span class="star">*</span>필수입력사항</li>
+                </ul>
+                <table id="jointable" border="1">
+                    <colgroup>
+                        <col class="col1">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>아이디<span class="star">*</span></th>
+                            <td>
+                                <input id="uid" type="text" class="join-id" value="">
+                                <span id="idmsg" class="error"></span>
+                                <span class="plusmsg">(영문 소문자/숫자,4~16자)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호<span class="star">*</span></th>
+                            <td>
+                                <input id="upw" type="password" class="join-pw" value="">
+                                <span id="pwmsg" class="error"></span>
+                                <span class="plusmsg">(영문 대소문자/숫자 조합,10~16자)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이름<span class="star">*</span></th>
+                            <td>
+                                <input id="uname" type="text" class="join-name" value="">
+                            </td>
+                        </tr>
+                        <tr class>
+                            <th scope="row" style="vertical-align: top;">주소</th>
+                            <td>
+                                <input type="text" class="join-postcode">
+                                <a href="" class="postbtn plusmsg" onclick="">우편번호</a>
+                                <br>
+                                <div style="margin: 5px 0;">
+                                    <input type="text" class="join-addr">
+                                    <span class="plusmsg">기본주소</span>
+                                </div>
+                                <input type="text" class="join-addr">
+                                <span class="plusmsg">나머지주소(선택입력가능)</span>
+                            </td>
+                        </tr>
+                        <tr class>
+                            <th scope="row">휴대전화<span class="star">*</span></th>
+                            <td>
+                                <select name="mobile1" id="mobile1">
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                                -
+                                <input id="mobile2" type="number" class="join-mobile1" maxlength="4" style="width: 60px;" oninput="maxLengthCheck(this)">
+                                -
+                                <input id="mobile3" type="number" class="join-mobile2" maxlength="4" style="width: 60px;" oninput="maxLengthCheck(this)">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                이메일<span class="star">*</span>
+                            </th>
+                            <td>
+                                <input id="umail" type="text" class="join-email" style="width: 203px;" value="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="join-btn">
+                <button id="joinbtn" class="joinbtn">회원가입</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="inside">
+            <ul class="foot-police">
+                <li><a href="">이용약관</a></li>
+                <li><a href="" class="font-bold">개인정보처리방침</a></li>
+            </ul>
+            <div class="foot-title">MULCAMANIMAL</div>
+            <ul class="foot-info">
+                <li>상호명: 애니멀 유기동물 보호소 | 대표자: 김혜연</li>
+                <li>주소: 서울특별시</li>
+                <li>사업자등록번호: 123-45-6789</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
